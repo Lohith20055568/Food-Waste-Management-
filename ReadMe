@@ -70,14 +70,8 @@ For PostgreSQL, update `DATABASES` accordingly.
 python manage.py migrate
 ```
 
-### Step 6: Create Superuser
-```bash
-python manage.py createsuperuser
-```
-Follow the prompts to create an admin account.
 
-### Step 7: Run Development Server
-```bash
+
 python manage.py runserver
 ```
 Visit `http://127.0.0.1:8000/admin` to access the admin panel.
