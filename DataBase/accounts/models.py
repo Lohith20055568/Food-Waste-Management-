@@ -5,7 +5,7 @@ class User(AbstractUser):
     is_customer = models.BooleanField(default=True)
     is_restaurant = models.BooleanField(default=False)
     phone = models.CharField(max_length=15, blank=True)
-    address = models.TextField(blank=True)
+        address = models.TextField(blank=True)
 
     def __str__(self):
         return self.username
