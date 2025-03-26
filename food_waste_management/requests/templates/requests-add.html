@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% block content %}
+<script>
+	jQuery(function () {
+		jQuery("#attandance_date").datepicker({
+			changeMonth: true,
+			changeYear: true,
+			yearRange: "0:+1",
+			dateFormat: 'd MM,yy'
+		});
+	});
+</script>
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1>Food Request Form</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs end-->
+<!--container start-->
+<div class="registration-bg">
+    <div class="row">
+        <form
+            id="contact_form"
+            action="#"
+            method="POST"
+            enctype="multipart/form-data"
+			class="form-signin wow fadeInUp" style="max-width:60%">
+				{% csrf_token %}
+				<h2 class="form-signin-heading">
+					Submit Your Requests for Food
+				</h2>
+				{% if messages %}
+				<div class="alert alert-success fade in" style="margin:10px;">
+					{% for message in messages %}
+					<strong>{{ message }}</strong> {% endfor %}
+				</div>
+				{% endif %}
+				<div class="login-wrap">
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="Full Name" autofocus="" name="requests_name" id="requests_name" value="{{requestsDetails.requests_name}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="Mobile Number" autofocus="" name="requests_contact" id="requests_contact" value="{{requestsDetails.requests_contact}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="email" class="form-control" placeholder="Email" autofocus="" name="requests_email" id="requests_email" value="{{requestsDetails.requests_email}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+						<input type="text" class="form-control" placeholder="Quantity" autofocus="" name="requests_quantity" id="requests_quantity" value="{{requestsDetails.requests_quantity}}" required>			
+						</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="Delivery Address" autofocus="" name="requests_address" id="requests_address" value="{{requestsDetails.requests_address}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="City" autofocus="" name="requests_city" id="requests_city" value="{{requestsDetails.requests_city}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="State" autofocus="" name="requests_state" id="requests_state" value="{{requestsDetails.requests_state}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<textarea name="requests_description" rows="5" class="form-control" id="requests_description" placeholder="Description">{{requestsDetails.requests_description}}</textarea>			
+					</div>
+					
+					<button class="btn btn-lg btn-login btn-block" type="submit">Submit</button>
+
+				</div>
+				<input type="hidden" name="act" value="save_requests">
+				<input type="hidden" name="avail_image" value="{{requestsdetails.requests_image}}">
+				<input type="hidden" name="requests_id" value="{{requestsdetails.requests_id}}">
+
+			</form>
+		</div>
+	</div>
+	<!--container end-->
+	{% endblock content %}
+	
