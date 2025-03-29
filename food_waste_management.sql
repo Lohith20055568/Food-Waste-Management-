@@ -34,7 +34,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `category'
+-- Dumping data for table `category`
 --
 
 INSERT INTO `category` (`category_id`, `category_name`, `category_description`) VALUES
