@@ -199,8 +199,6 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## ✉️ Contact
 
-**Project Author**: Your Name  
+**Project Author**: Lohith Badam 
 **Email**: your.email@example.com  
-**GitHub**: [github.com/yourusername](https://github.com/yourusername)
-
-> 💡 *Let’s reduce food waste and hunger through tech!*
+**GitHub**: https://github.com/Lohith20055568/Food-Waste-Management-.git
