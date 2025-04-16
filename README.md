@@ -2,11 +2,19 @@
 
 A robust, modular Django-based web application built to automate and streamline food donation and request processes, enabling NGOs and food banks to manage food waste more efficiently and sustainably.
 
----
-
 ## 📌 Table of Contents
 
 - [📖 Project Overview](#project-overview)
+- [💼 Business Requirements](#business-requirements)
+- [✅ Core Functionalities](#core-functionalities)
+  - [🔐 Authentication & Access Control](#authentication--access-control)
+  - [👤 Customer Module](#customer-module)
+  - [🧍 Donor Module](#donor-module)
+  - [🍱 Food Module](#food-module)
+  - [📥 Food Request Module](#food-request-module)
+  - [📦 Food Donation Module](#food-donation-module)
+  - [📈 Dashboard & Search](#dashboard--search)
+  - [🛠️ Other Features](#other-features)
 - [🎯 Objective](#objective)
 - [💡 Functionalities](#functionalities)
 - [🔭 Scope](#scope)
@@ -22,13 +30,57 @@ A robust, modular Django-based web application built to automate and streamline 
 - [📄 License](#license)
 - [✉️ Contact](#contact)
 
+
 ---
 
 ## 📖 Project Overview
 
 The **Food Waste Management System** is developed to replace manual processes in food donation and request tracking. It ensures secure, accurate, and efficient management of food inventory, donor and recipient records, request tracking, and more. Built on Django and MySQL, it serves as a reliable and scalable tool for food banks and social organizations.
+## 💼 Business Requirements
 
----
+- Eliminate manual record-keeping and paper-based systems.
+- Provide a user-friendly, web-based interface.
+- Offer secure, role-based access (Admin, Donor, Customer).
+- Enable remote access and centralized data management.
+- Automate and speed up tasks like donations, requests, and report generation.
+- Improve decision-making through data visualization and analytics.
+
+## ✅ Core Functionalities
+
+### 🔐 Authentication & Access Control
+- Secure login/logout
+- Session handling and role-based access
+
+### 👤 Customer Module
+- Register and manage customer profiles
+- View personal request history
+
+### 🧍 Donor Module
+- Manage donor profiles
+- Track donations made
+
+### 🍱 Food Module
+- Add/update food items
+- Organize by food type/category
+
+### 📥 Food Request Module
+- Add/edit requests
+- Approve/track status of food requests
+
+### 📦 Food Donation Module
+- Donors can offer food donations
+- Admins can approve/manage them
+
+
+### 📈 Dashboard & Search
+- Visual summary of requests/donations
+- Search by donor, customer, food type, etc.
+
+### 🛠️ Other Features
+- Image uploads for donations/requests
+- Request status indicators & priorities
+- Comments and attachments for records
+- Secure data validation and error handling
 
 ## 🎯 Objective
 
@@ -221,12 +273,12 @@ Request Details
 
 ## 📄 License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [20055568@mydbs.ie](./LICENSE).
 
 ---
 
 ## ✉️ Contact
 
 **Project Author**: Lohith Badam 
-**Email**: your.email@example.com  
+**Email**: 20055568@mydbs.ie 
 **GitHub**: https://github.com/Lohith20055568/Food-Waste-Management-.git
