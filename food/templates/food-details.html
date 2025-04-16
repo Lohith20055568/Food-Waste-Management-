@@ -1,0 +1,91 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #101010;
+    padding: 10px;
+    color: #101010;
+}
+
+</style>
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4">
+        <h1>
+          Food Donation Details
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //breadcrumbs -->
+
+<div class="typo">
+  <div class="container">
+    <div class="typo-grids">
+          {% csrf_token %}
+          <div class="col-sm-12">
+              <form enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+              <h3>Food Donation Details</h3>
+              <div>  
+                {{fooddetails.food_description}}
+              </div>
+              <table style="width:100%; margin:20px;">
+                <tr>
+                  <td style="width:50%; vertical-align: top;"><img src="{{fooddetails.food_image}}" style="width: 100%; border: 2px solid #101010; border-radius: 10px;"></td>
+                  <td style="vertical-align:top; padding:0px 20px; width:50%">
+                    <table style="width: 100%">
+                      <tr>
+                        <td colspan="2">
+                            <span style="color: #101010; font-size: 16px;">Details of Deliver</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Contact Name</th>
+                        <td class="td_color">{{fooddetails.food_contact_name}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Mobile Number</th>
+                        <td class="td_color">{{fooddetails.food_mobile}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Prepared Date</th>
+                        <td class="td_color">{{fooddetails.food_prepared_date}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Expiry Date</th>
+                        <td class="td_color">{{fooddetails.food_expiry_date}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Quantity</th>
+                        <td class="td_color">{{fooddetails.food_quantity}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Pickup Address</th>
+                        <td class="td_color">{{fooddetails.food_pickup_address}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">City</th>
+                        <td class="td_color">{{fooddetails.food_city}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">State</th>
+                        <td class="td_color">{{fooddetails.food_state}}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <input type="hidden" name="food_id" value="{{fooddetails.food_id}}">
+              <input type="hidden" name="food_price" value="{{fooddetails.food_price}}">
+            </form>
+          </div>
+    </div>
+  </div>
+</div>
+<!--container end-->
+{% endblock content %}

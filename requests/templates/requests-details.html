@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #101010;
+    padding: 10px;
+    color: #101010;
+}
+
+</style>
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4">
+        <h1>
+          Food Request Details
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //breadcrumbs -->
+
+<div class="typo">
+  <div class="container">
+    <div class="typo-grids">
+          {% csrf_token %}
+          <div class="col-sm-12">
+              <form enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+              <h3>Food Request Details</h3>
+              <div>  
+                {{requestsdetails.requests_description}}
+              </div>
+              <table style="width:50%; margin:20px;">
+                <tr>
+                  <td style="vertical-align:top; padding:0px 20px; width:100%">
+                    <table style="width: 100%">
+                      <tr>
+                        <td colspan="2">
+                            <span style="color: #101010; font-size: 16px;">Details of Deliver</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Contact Name</th>
+                        <td class="td_color">{{requestsdetails.requests_name}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Mobile Number</th>
+                        <td class="td_color">{{requestsdetails.requests_contact}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Email</th>
+                        <td class="td_color">{{requestsdetails.requests_email}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Quantity</th>
+                        <td class="td_color">{{requestsdetails.requests_quantity}}</td>
+                      </tr>
+                      <tr>
+                        <th class="th_color" style="width:160px;">Delivery Address</th>
+                        <td class="td_color">{{requestsdetails.requests_address}}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <input type="hidden" name="requests_id" value="{{requestsdetails.requests_id}}">
+              <input type="hidden" name="requests_price" value="{{requestsdetails.requests_price}}">
+            </form>
+          </div>
+    </div>
+  </div>
+</div>
+<!--container end-->
+{% endblock content %}

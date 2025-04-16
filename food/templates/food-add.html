@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% block content %}
+<script>
+	jQuery(function () {
+		jQuery("#attandance_date").datepicker({
+			changeMonth: true,
+			changeYear: true,
+			yearRange: "0:+1",
+			dateFormat: 'd MM,yy'
+		});
+	});
+</script>
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">
+                <h1>{{heading}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs end-->
+<!--container start-->
+<div class="registration-bg">
+    <div class="row">
+        <form
+            id="contact_form"
+            action="#"
+            method="POST"
+            enctype="multipart/form-data"
+			class="form-signin wow fadeInUp" style="max-width:60%">
+				{% csrf_token %}
+				<h2 class="form-signin-heading">
+					Submit Food Donation 
+				</h2>
+				{% if messages %}
+				<div class="alert alert-success fade in" style="margin:10px;">
+					{% for message in messages %}
+					<strong>{{ message }}</strong> {% endfor %}
+				</div>
+				{% endif %}
+				<div class="login-wrap">
+					<div class="col-xs-6 form-group">
+						<input type="text" class="form-control" placeholder="Full Name" autofocus="" name="food_contact_name" id="food_contact_name" value="{{foodDetails.food_contact_name}}" required>			
+						</div>
+						<div class="col-xs-6 form-group">
+						<input type="text" class="form-control" placeholder="Mobile Number" autofocus="" name="food_mobile" id="food_mobile" value="{{foodDetails.food_mobile}}" required>			
+						</div>
+					<div class="col-xs-6 form-group">
+					<select name="food_category" required class="form-control" placeholder="Select Category" autofocus=""  required> 
+						<option value="Please Select">Select Category</option>
+						{{categorylist |safe }}
+					</select>
+					</div>
+					<div class="col-xs-6 form-group">
+					<select name="food_type" required class="form-control" placeholder="Select Type" autofocus=""  required> 
+						<option value="Please Select">Select Type</option>
+						{{typelist |safe }}
+					</select>
+					</div>
+					
+					<div class="col-xs-6 form-group">
+					<input type="date" class="form-control" placeholder="Prepared Date" autofocus="" name="food_prepared_date" id="food_prepared_date" value="{{foodDetails.food_prepared_date}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="date" class="form-control" placeholder="Expiry Date" autofocus="" name="food_expiry_date" id="food_expiry_date" value="{{foodDetails.food_expiry_date}}" required>			
+					</div>
+					
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="Quantity" autofocus="" name="food_quantity" id="food_quantity" value="{{foodDetails.food_quantity}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="Pickup Address" autofocus="" name="food_pickup_address" id="food_pickup_address" value="{{foodDetails.food_pickup_address}}" required>			
+					</div>
+					
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="City" autofocus="" name="food_city" id="food_city" value="{{foodDetails.food_city}}" required>			
+					</div>
+					<div class="col-xs-6 form-group">
+					<input type="text" class="form-control" placeholder="State" autofocus="" name="food_state" id="food_state" value="{{foodDetails.food_state}}" required>			
+					</div>
+					
+					<div class="col-xs-6 form-group">
+						<div class="form-group row">
+							  <input type="file" class="form-control" name="food_image" id="food_image" placeholder="food Image" value="{{foodDetails.user_image}}">
+								  {% if foodDetails.food_image %}
+								  <div class="clearfix" style="margin-top:20px;"><img src="{{foodDetails.food_image}}" style="width: 100px"></div><br>
+								  {% endif %}
+							</div>
+						  </div>					
+					</div>
+					<div class="col-xs-6 form-group">
+					<textarea name="food_description" rows="5" class="form-control" id="food_description" placeholder="Description">{{foodDetails.food_description}}</textarea>			
+					</div>
+					
+					<button class="btn btn-lg btn-login btn-block" type="submit">Submit</button>
+
+				</div>
+				<input type="hidden" name="act" value="save_food">
+				<input type="hidden" name="avail_image" value="{{fooddetails.food_image}}">
+				<input type="hidden" name="food_id" value="{{fooddetails.food_id}}">
+
+			</form>
+		</div>
+	</div>
+	<!--container end-->
+	{% endblock content %}
+	
