@@ -212,14 +212,13 @@ python manage.py runserver
 ## 🖼️ Screenshots
 ![HOME_F](https://github.com/user-attachments/assets/0afd4386-af63-48df-be00-7f25136361c8)
 - Home Page
--  ![ABout_F](https://github.com/user-attachments/assets/f1981dfc-96cd-4ba0-8873-4cfabad82d30)
+![ABout_F](https://github.com/user-attachments/assets/f1981dfc-96cd-4ba0-8873-4cfabad82d30)
 -  About Page
-  ![Contact_F](https://github.com/user-attachments/assets/2b7d8627-c78f-4bf0-9720-88f6603cbf78)
+![Contact_F](https://github.com/user-attachments/assets/2b7d8627-c78f-4bf0-9720-88f6603cbf78)
 - Contact Page
 ![Login_F](https://github.com/user-attachments/assets/9f736414-ad11-4714-a49b-5157d0b7192c)
-
   Login Page
-  ![Register _F](https://github.com/user-attachments/assets/1adb1816-c613-4b9c-bdfd-d8f3b236af03)
+![Register _F](https://github.com/user-attachments/assets/1adb1816-c613-4b9c-bdfd-d8f3b236af03)
 - Customer Registeration
 ![image](https://github.com/user-attachments/assets/4c53af56-73b4-4720-8070-dba23fb2de42)
 - Change Password
