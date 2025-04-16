@@ -158,14 +158,42 @@ python manage.py runserver
 ---
 
 ## 🖼️ Screenshots
+![HOME_F](https://github.com/user-attachments/assets/0afd4386-af63-48df-be00-7f25136361c8)
+- Home Page
+-  ![ABout_F](https://github.com/user-attachments/assets/f1981dfc-96cd-4ba0-8873-4cfabad82d30)
+-  About Page
+  ![Contact_F](https://github.com/user-attachments/assets/2b7d8627-c78f-4bf0-9720-88f6603cbf78)
+- Contact Page
+![Login_F](https://github.com/user-attachments/assets/9f736414-ad11-4714-a49b-5157d0b7192c)
+
+  Login Page
+  ![Register _F](https://github.com/user-attachments/assets/1adb1816-c613-4b9c-bdfd-d8f3b236af03)
+- Customer Registeration
+![image](https://github.com/user-attachments/assets/4c53af56-73b4-4720-8070-dba23fb2de42)
+- Change Password
+![image](https://github.com/user-attachments/assets/475c0cb7-7331-4abd-8dfa-052349a40f69)
+- Add Food
+![image](https://github.com/user-attachments/assets/3fd39d2e-7ef1-4fb0-8aea-7022a6bc59c9)
+- Dash Board
+![image](https://github.com/user-attachments/assets/0b3236e1-5b2d-4e29-8e84-b26a28032cdc)
+- Food Request Details
+![image](https://github.com/user-attachments/assets/d0d5b37d-6869-408c-92d1-a3a075754b4e)
+Request Details
+![image](https://github.com/user-attachments/assets/ce2b92e0-b7fc-47fe-9b77-42cd9f31402c)
+- Food Donation Details
+![image](https://github.com/user-attachments/assets/f19b2c75-f969-421f-9770-6cef0ccf6b90)
+- Food Available
+![image](https://github.com/user-attachments/assets/10fbb5b8-ef21-47ff-93c2-5c7b9bfee52d)
+- Food Details
 
 - 🏠 Home Page with banner and navigation
+  
 - 🧾 Food Donation / Request Forms
 - 📊 Admin Dashboard
 - 📋 Listings of Donations & Requests
 - 🧑 User Login / Registration Interfaces
 
-(*Screenshots should be placed in the `/screenshots` folder of your repo*)
+
 
 ---
 
