@@ -1,42 +1,42 @@
-# 🍛 Food Waste Management System
+#  Food Waste Management System
 
 A robust, modular Django-based web application built to automate and streamline food donation and request processes, enabling NGOs and food banks to manage food waste more efficiently and sustainably.
 
-## 📌 Table of Contents
+##  Table of Contents
 
-- [📖 Project Overview](#project-overview)
-- [💼 Business Requirements](#business-requirements)
-- [✅ Core Functionalities](#core-functionalities)
-  - [🔐 Authentication & Access Control](#authentication--access-control)
-  - [👤 Customer Module](#customer-module)
-  - [🧍 Donor Module](#donor-module)
-  - [🍱 Food Module](#food-module)
-  - [📥 Food Request Module](#food-request-module)
-  - [📦 Food Donation Module](#food-donation-module)
-  - [📈 Dashboard & Search](#dashboard--search)
-  - [🛠️ Other Features](#other-features)
-- [🎯 Objective](#objective)
-- [💡 Functionalities](#functionalities)
-- [🔭 Scope](#scope)
-- [📊 Reports](#reports)
-- [📦 Modules](#modules)
-- [✨ Features](#features)
-- [🛠️ Tech Stack](#tech-stack)
-- [⚙️ Installation Instructions](#installation-instructions)
-- [🧪 Testing Strategy](#testing-strategy)
-- [🖼️ Screenshots](#screenshots)
-- [🔮 Future Enhancements](#future-enhancements)
-- [📚 References](#references)
-- [📄 License](#license)
-- [✉️ Contact](#contact)
+- [ Project Overview](#project-overview)
+- [ Business Requirements](#business-requirements)
+- [ Core Functionalities](#core-functionalities)
+  - [ Authentication & Access Control](#authentication--access-control)
+  - [ Customer Module](#customer-module)
+  - [ Donor Module](#donor-module)
+  - [ Food Module](#food-module)
+  - [ Food Request Module](#food-request-module)
+  - [ Food Donation Module](#food-donation-module)
+  - [ Dashboard & Search](#dashboard--search)
+  - [ Other Features](#other-features)
+- [ Objective](#objective)
+- [ Functionalities](#functionalities)
+- [ Scope](#scope)
+- [ Reports](#reports)
+- [ Modules](#modules)
+- [ Features](#features)
+- [ Tech Stack](#tech-stack)
+- [ Installation Instructions](#installation-instructions)
+- [ Testing Strategy](#testing-strategy)
+- [ Screenshots](#screenshots)
+- [ Future Enhancements](#future-enhancements)
+- [ References](#references)
+- [ License](#license)
+- [ Contact](#contact)
 
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 The **Food Waste Management System** is developed to replace manual processes in food donation and request tracking. It ensures secure, accurate, and efficient management of food inventory, donor and recipient records, request tracking, and more. Built on Django and MySQL, it serves as a reliable and scalable tool for food banks and social organizations.
-## 💼 Business Requirements
+##  Business Requirements
 
 - Eliminate manual record-keeping and paper-based systems.
 - Provide a user-friendly, web-based interface.
@@ -45,44 +45,44 @@ The **Food Waste Management System** is developed to replace manual processes in
 - Automate and speed up tasks like donations, requests, and report generation.
 - Improve decision-making through data visualization and analytics.
 
-## ✅ Core Functionalities
+##  Core Functionalities
 
-### 🔐 Authentication & Access Control
+###  Authentication & Access Control
 - Secure login/logout
 - Session handling and role-based access
 
-### 👤 Customer Module
+###  Customer Module
 - Register and manage customer profiles
 - View personal request history
 
-### 🧍 Donor Module
+###  Donor Module
 - Manage donor profiles
 - Track donations made
 
-### 🍱 Food Module
+###  Food Module
 - Add/update food items
 - Organize by food type/category
 
-### 📥 Food Request Module
+###  Food Request Module
 - Add/edit requests
 - Approve/track status of food requests
 
-### 📦 Food Donation Module
+###  Food Donation Module
 - Donors can offer food donations
 - Admins can approve/manage them
 
 
-### 📈 Dashboard & Search
+###  Dashboard & Search
 - Visual summary of requests/donations
 - Search by donor, customer, food type, etc.
 
-### 🛠️ Other Features
+###  Other Features
 - Image uploads for donations/requests
 - Request status indicators & priorities
 - Comments and attachments for records
 - Secure data validation and error handling
 
-## 🎯 Objective
+##  Objective
 
 - Centralize food donation and request data.
 - Automate redundant administrative tasks.
@@ -92,7 +92,7 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## 💡 Functionalities
+##  Functionalities
 
 - Role-based login (Admin, Donor, Recipient)
 - Add/edit food donations and requests
@@ -104,7 +104,7 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## 🔭 Scope
+##  Scope
 
 - Automation of donation tracking and food inventory
 - Streamlined reporting and manifest generation
@@ -114,7 +114,7 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## 📊 Reports
+##  Reports
 
 | Report Type      | Available Formats         |
 |------------------|---------------------------|
@@ -126,7 +126,7 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## 📦 Modules
+##  Modules
 
 - **Customer Module**: Manage customer info and profiles.
 - **Donor Module**: Track donations and donor activity.
@@ -138,20 +138,20 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🧾 Error-free and validated input forms
-- 🔐 Secure login and access control
-- 📂 Attachments and comments on records
-- 📊 Export-ready reports and visual filters
-- ⚙️ MVC architecture using Django
-- ⚡ Fast data retrieval, filtering, and querying
-- 🔄 Real-time status indicators and updates
-- 🧱 Modular design for easy future enhancements
+-  Error-free and validated input forms
+-  Secure login and access control
+-  Attachments and comments on records
+-  Export-ready reports and visual filters
+-  MVC architecture using Django
+-  Fast data retrieval, filtering, and querying
+-  Real-time status indicators and updates
+-  Modular design for easy future enhancements
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer      | Technology       |
 |------------|------------------|
@@ -164,7 +164,7 @@ The **Food Waste Management System** is developed to replace manual processes in
 
 ---
 
-## ⚙️ Installation Instructions
+##  Installation Instructions
 
 ### Prerequisites
 
@@ -199,7 +199,7 @@ python manage.py runserver
 
 ---
 
-## 🧪 Testing Strategy
+##  Testing Strategy
 
 - **Unit Testing**: Verified functions and forms
 - **Integration Testing**: Modules tested for compatibility
@@ -209,7 +209,7 @@ python manage.py runserver
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 ![HOME_F](https://github.com/user-attachments/assets/0afd4386-af63-48df-be00-7f25136361c8)
 - Home Page
 ![ABout_F](https://github.com/user-attachments/assets/f1981dfc-96cd-4ba0-8873-4cfabad82d30)
@@ -237,30 +237,30 @@ Request Details
 ![image](https://github.com/user-attachments/assets/10fbb5b8-ef21-47ff-93c2-5c7b9bfee52d)
 - Food Details
 
-- 🏠 Home Page with banner and navigation
+-  Home Page with banner and navigation
   
-- 🧾 Food Donation / Request Forms
-- 📊 Admin Dashboard
-- 📋 Listings of Donations & Requests
-- 🧑 User Login / Registration Interfaces
+-  Food Donation / Request Forms
+-  Admin Dashboard
+-  Listings of Donations & Requests
+-  User Login / Registration Interfaces
 
 
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
-- 🌐 Cloud hosting (AWS/Azure)
-- 🔔 Email/SMS notifications
-- 📈 Analytics dashboard for trends
-- 🔄 REST API support for mobile app
-- 📤 Printer-friendly receipts
-- ☁️ Auto-backups and data sync
-- 🏷️ QR/Barcode integration
+-  Cloud hosting (AWS/Azure)
+-  Email/SMS notifications
+-  Analytics dashboard for trends
+-  REST API support for mobile app
+-  Printer-friendly receipts
+-  Auto-backups and data sync
+-  QR/Barcode integration
 
 ---
 
-## 📚 References
+##  References
 
 - Django Official Documentation
 - MySQL Developer Docs
@@ -270,13 +270,13 @@ Request Details
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the [20055568@mydbs.ie](./LICENSE).
 
 ---
 
-## ✉️ Contact
+## Contact
 
 **Project Author**: Lohith Badam 
 **Email**: 20055568@mydbs.ie 
